@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Placement Predictor</h2>
+        
+        <form id="predictionForm">
+            <div class="input-group">
+                <label for="iq">Enter IQ of the student</label>
+                <input type="number" id="iq" step="0.01" min="0" value="0.00" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="cgpa">Enter CGPA of the student</label>
+                <input type="number" id="cgpa" step="0.01" min="0" max="10" value="0.00" required>
+            </div>
+            
+            <button type="submit" id="predictBtn">Predict</button>
+        </form>
+
+        <div id="result" class="result-box hidden"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
