@@ -1,4 +1,4 @@
 Flask
 numpy
-scikit-learn==1.6.1 <-- Change this number to whatever Colab printed
+scikit-learn==1.6.1 
 gunicorn
